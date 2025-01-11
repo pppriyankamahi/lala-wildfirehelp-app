@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import HelpPage from './components/HelpPage';
+import HelpData from './components/HelpData';
 import './App.css'; // Import the CSS file
 import wildfireImage from './assets/wildfire.jpg'; // Import the image
 
@@ -26,6 +27,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/help/need" element={<HelpData />} />
         <Route path="/help/:type" element={<HelpPage />} />
       </Routes>
     </Router>
